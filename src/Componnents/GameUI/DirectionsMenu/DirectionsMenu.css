@@ -1,0 +1,33 @@
+.select-directions-container {
+  display: flex;
+}
+
+.arrow-icon {
+  size: 2em;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.direction-button {
+  background-color: var(--direction-button-bg-color);
+}
+
+.direction-button > * {
+  color: var(--direction-button-arrow-color);
+}
+
+.direction-button--selection {
+  background-color: var(--direction-button-bg-selection);
+}
+
+.direction-button--selection > * {
+  color: var(--direction-button-arrow-color-selection);
+}
+
+.direction-button:hover {
+  background-color: var(--direction-button-hover);
+}
+
+.direction-button--selection:hover {
+  background-color: var(--direction-button-selection-hover);
+}

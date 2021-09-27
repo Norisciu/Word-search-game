@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-wrapper {
+  margin: 1em auto;
+  width: max-content;
+}
+
+.selection-letters {
+  text-align: center;
+  font-size: 18px;
+}
+
+.words-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border: solid 4px #fbe7c6;
+  width: max-content;
+  margin-top: 0.2em;
+}
+
+.counter-bar {
+  height: 20px;
+  background-color: royalblue;
+  margin-top: 0.2em;
+}
+
+.word-search-menu-words {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 90%;
+  margin: 0.5em auto;
+  margin-top: 0.5em;
+}
+
+.word-to-find {
+  font-size: 29px;
+  margin: 0;
+  user-select: none;
+}
+
+.found-word {
+  text-decoration: line-through;
+  color: #747679;
+}
+
+.hint {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.search-word-container {
+  padding: 0 0.5em;
+  width: 5.9em;
+  border: solid #fbe7c6 4px;
+  position: relative;
+  text-align: center;
+  margin: 2em auto;
+  margin-bottom: 0.7em;
+  margin-top: 1.2em;
+}
+
+.search-word {
+  margin: 0;
+}
+
+.column-left {
+  width: 20%;
+  border-right: lightgrey 1px solid;
+  order: 1;
+}
+
+.solutions-counter {
+  width: 5.9em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.solutions {
+  font-size: 1rem;
+}
+
+.misses {
+  font-size: 1rem;
+  margin-left: 1em;
+}
+
+.column-right {
+  width: 80%;
+  order: 2;
+}
+
+.solutions-counter button {
+  width: 80%;
+  padding: 0.2em 0.5em;
+  margin: 0 auto;
+}
+
+.timer {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.game-screen {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}

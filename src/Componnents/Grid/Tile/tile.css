@@ -1,0 +1,44 @@
+
+.tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px #FBE7C6;
+    user-select: none;
+    font-weight: 700;
+    font-size: 29px;
+  
+  }
+  
+  
+.tile.selection{
+    background-color: rgb(180, 222, 176);
+    background-color: rgb(176, 192, 222);
+    background-color: rgb(221, 222, 176);
+    background-color: rgb(237, 170, 144);
+}
+  
+.tile-selection-red {
+    background-color: rgb(237, 170, 144);
+}
+  
+.tile-selection-error-color{
+    background-color: lightpink;
+}
+  
+.tile-selection-blue{
+    background-color: rgb(176, 192, 222);
+}
+  
+.tile-selection-green{
+    background-color: rgb(180, 222, 176);
+}
+  
+.tile-selection-yellow{
+    background-color: rgb(220, 222, 176); 
+}
+  
+.tile-selection-white{
+    background-color: white;
+}
+  

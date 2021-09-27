@@ -1,0 +1,18 @@
+.banner-container {
+  background-color: #fee16b;
+  margin: 0;
+  width: 50%;
+  border-radius: 0.2em;
+  margin: 0 auto 0.5em auto;
+  padding: 0.5rem;
+}
+
+.banner__content {
+  text-align: center;
+
+  font-weight: 700;
+  color: #59211d;
+  font-size: smaller;
+  margin: 0;
+  user-select: none;
+}

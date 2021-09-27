@@ -1,0 +1,60 @@
+.container--custom-game-screen {
+  width: 69vw;
+
+  background-color: whitesmoke;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.words-display {
+  height: 70vh;
+
+  border: 5px solid lightgray;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(auto, 9%);
+  grid-auto-rows: 9%;
+  padding: 1em;
+  gap: 1%;
+
+  margin-bottom: 1em;
+}
+
+.screen-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.words-add-field {
+  width: 100%;
+  padding: 1em;
+}
+
+.add-word-button {
+  position: absolute;
+  right: 1em;
+  margin: 0;
+}
+
+.game-buttons-wrapper * + * {
+  margin-left: 1em;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-row label {
+  font-size: 15px;
+}
+
+.settings-row > input,
+select {
+  width: 50%;
+}

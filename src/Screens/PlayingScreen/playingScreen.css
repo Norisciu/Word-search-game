@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid-wrapper {
+  margin: 1em auto;
+  width: max-content;
+}
+
+.selection-letters {
+  text-align: center;
+  font-size: 18px;
+}
+
+.words-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border: solid 4px #fbe7c6;
+  width: max-content;
+  margin-top: 0.2em;
+}
+
+.counter-bar {
+  height: 20px;
+  background-color: royalblue;
+  margin-top: 0.2em;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #fbe7c6;
+  user-select: none;
+  font-weight: 700;
+  font-size: 29px;
+}
+
+.tile.selection {
+  background-color: rgb(180, 222, 176);
+  background-color: rgb(176, 192, 222);
+  background-color: rgb(221, 222, 176);
+  background-color: rgb(237, 170, 144);
+}
+
+.tile-selection-red {
+  background-color: rgb(237, 170, 144);
+}
+
+.tile-selection-error-color {
+  background-color: lightpink;
+}
+
+.tile-selection-blue {
+  background-color: rgb(176, 192, 222);
+}
+
+.tile-selection-green {
+  background-color: rgb(180, 222, 176);
+}
+
+.tile-selection-yellow {
+  background-color: rgb(220, 222, 176);
+}
+
+.tile-selection-hint {
+  background-color: thistle;
+}
+
+.tile-selection-white {
+  background-color: white;
+}
+
+.word-search-menu-words {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 90%;
+  margin: 0.5em auto;
+  margin-top: 0.5em;
+}
+
+.word-to-find {
+  font-size: 29px;
+  margin: 0;
+  user-select: none;
+}
+
+.found-word {
+  text-decoration: line-through;
+  color: #747679;
+}
+
+.hint {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.search-word-container {
+  padding: 0 0.5em;
+  width: 5.9em;
+  border: solid #fbe7c6 4px;
+  position: relative;
+  text-align: center;
+  margin: 2em auto;
+  margin-bottom: 0.7em;
+  margin-top: 1.2em;
+  height: 100%;
+}
+
+.search-word {
+  margin: 0;
+}
+
+.column-left {
+  width: 20%;
+  border-right: lightgrey 1px solid;
+}
+
+.solutions-counter {
+  width: 5.9em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.solutions {
+  font-size: 1rem;
+}
+
+.misses {
+  font-size: 1rem;
+  margin-left: 1em;
+}
+
+.column-right {
+  width: 80%;
+}
+
+.solutions-counter button {
+  width: 80%;
+  padding: 0.2em 0.5em;
+  margin: 0 auto;
+}
+
+.timer {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.play-screen-main {
+  width: 80%;
+}
+
+.menu--word-list {
+  width: 20%;
+  position: relative;
+}
+
+.left {
+  order: 1;
+  border-right: lightgrey 1px solid;
+}
+
+.right {
+  order: 2;
+  border-left: lightgrey 1px solid;
+}
+
+.button {
+  padding: 0.5em 1.5em;
+}
+
+.button--switch {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}

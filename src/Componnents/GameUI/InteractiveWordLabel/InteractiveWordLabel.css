@@ -1,0 +1,16 @@
+.word-label-container{
+    position: relative;
+    display: flex;
+    cursor:pointer;
+}
+
+.word-label-container:hover .close-icon{
+    color: crimson;
+}
+
+.close-icon{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}

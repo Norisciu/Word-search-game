@@ -1,0 +1,40 @@
+.game-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: var(--menu-backgrund-color);
+  color: whitesmoke;
+}
+
+.game-menu__name {
+  margin: 1em 0 0.5em 0;
+  color: black;
+}
+
+.menu-content {
+  font-size: 19px;
+  color: rgb(46, 46, 46);
+  margin-bottom: 1em;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+  background-color: whitesmoke;
+  background-color: var(--confirm-color);
+}
+
+.button--menu-button-reject {
+  margin-left: 1em;
+}
+
+.button:hover {
+  background-color: var(--reject-color);
+}

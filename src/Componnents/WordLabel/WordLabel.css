@@ -1,0 +1,12 @@
+.word-label {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.word-name {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+}

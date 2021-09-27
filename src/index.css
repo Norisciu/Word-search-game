@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 24px;
+
+  --menu-backgrund-color: #3cc0fd;
+
+  --menu-backgrund-color: hsl(0, 0%, 22.4%);
+
+  --tile-backgrund-color: #595959;
+
+  --tile-font-color: whitesmoke;
+
+  --confirm-color: lightgrey;
+  --reject-color: rgb(136, 133, 133);
+
+  --tile-selection-green: rgb(41, 191, 41);
+  --tile-selection-brown: rgb(83, 49, 11);
+  --tile-selection-blue: #a49775;
+  --tile-selection-red: #ee3052;
+
+  background-color: #f0f0f0;
+  --tile-backgrund-color: white;
+  --tile-font-color: black;
+  --menu-backgrund-color: #f6f8fd;
+  --tile-backgrund-color: #e1ebff;
+
+  --direction-button-color-selection: #5b5a5a;
+  --direction-button-bg-selection: #f5f5f5;
+  --direction-button-bg-selection: #4e88ff;
+
+  --direction-button-bg-color: #a6d0e1;
+  --direction-button-bg-color: #d3d3d3;
+
+  --direction-button-arrow-color: darkgray;
+  --direction-button-arrow-color: black;
+
+  --direction-button-arrow-color-selection: whitesmoke;
+  --direction-button-hover: #dfdfdf;
+  --direction-button-selection-hover: #71a1ff;
+
+  font-size: calc(12px + ((32 - 22) * (100vmin - 320px)) / (800 - 320));
+}

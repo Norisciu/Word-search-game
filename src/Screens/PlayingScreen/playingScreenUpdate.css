@@ -1,0 +1,242 @@
+.game-screen--play {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-section {
+  display: flex;
+  width: 100%;
+}
+
+.screen-section--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-height: 100vh;
+}
+
+.menu-container {
+  border-radius: 0.5em;
+  height: 100%;
+  background-color: var(--menu-backgrund-color);
+  padding: 0.5em;
+  padding-top: 1em;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.menu-container__top-row {
+  display: flex;
+}
+
+.word-search-menu-words {
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.word-to-find {
+  font-size: 29px;
+  user-select: none;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  font-size: large;
+}
+
+.timer {
+  display: inline-block;
+  background-color: white;
+  padding: 0.1em 0.5em;
+  margin: 0;
+  margin-left: 1em;
+  border-radius: 0.25em;
+  font-size: 29px;
+  flex: 1;
+}
+
+.grid-wrapper {
+  margin: auto;
+}
+
+.words-grid {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  width: max-content;
+  margin-top: 0.2em;
+
+  padding: 19.5px;
+
+  gap: 5px;
+  background-color: #f5f5f5;
+  background-color: var(--menu-backgrund-color);
+  margin: auto;
+  border-radius: 0.5em;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #8757f2;
+  color: white;
+  background-color: var(--tile-backgrund-color);
+  color: var(--tile-font-color);
+  border-radius: 0.25em;
+  border: var(--tile-border);
+}
+
+.selection-letters {
+  text-align: center;
+  font-size: 18px;
+}
+
+.counter-bar {
+  height: 20px;
+
+  background-color: royalblue;
+  margin-top: 0.2em;
+}
+
+.tile.selection {
+  background-color: rgb(180, 222, 176);
+  background-color: rgb(176, 192, 222);
+  background-color: rgb(221, 222, 176);
+  background-color: rgb(237, 170, 144);
+}
+
+.tile-selection-red {
+  background-color: #ee3052;
+}
+
+.tile-selection-error-color {
+  background-color: #ee3052;
+}
+
+.tile-selection-blue {
+  background-color: rgb(52, 116, 235);
+}
+
+.tile-selection-green {
+  background-color: rgb(82, 212, 82);
+}
+
+.tile-selection-yellow {
+  background-color: #fec942;
+}
+
+.tile-selection-hint {
+  background-color: thistle;
+}
+
+.tile-selection-white {
+  background-color: white;
+}
+
+.found-word {
+  text-decoration: line-through;
+
+  color: #747679;
+}
+
+.hint {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.search-word-container {
+  padding: 0 0.5em;
+  width: 5.9em;
+  border: solid #fbe7c6 4px;
+  position: relative;
+  text-align: center;
+  margin: 2em auto;
+  margin-bottom: 0.7em;
+  margin-top: 1.2em;
+}
+
+.search-word {
+  margin: 0;
+}
+
+.solutions-counter {
+  width: 5.9em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.solutions {
+  font-size: 1rem;
+}
+
+.misses {
+  font-size: 1rem;
+  margin-left: 1em;
+}
+
+.screen-section--main {
+  flex-grow: 1;
+}
+
+.solutions-counter button {
+  width: 80%;
+  padding: 0.2em 0.5em;
+  margin: 0 auto;
+}
+
+.play-screen-main {
+  width: 80%;
+}
+
+.menu--word-list {
+  width: 20%;
+  position: relative;
+}
+
+.left {
+  order: 1;
+  border-right: lightgrey 1px solid;
+}
+
+.right {
+  order: 2;
+  border-left: lightgrey 1px solid;
+}
+
+.button {
+  padding: 0.5em 1.5em;
+}
+
+.button--switch {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .game-screen--play {
+    flex-direction: row;
+    font-size: 32px;
+  }
+
+  .screen-section--menu {
+    width: 40vw;
+    max-width: 320px;
+  }
+}

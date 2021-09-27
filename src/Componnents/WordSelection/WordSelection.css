@@ -1,0 +1,12 @@
+.letters-wrapper{
+    display: flex;
+    width: 100%;
+    min-height: 5.2rem;
+    padding: 0.5em;
+    justify-content: center;
+    
+}
+
+.letter-tile{
+    font-size: 2rem;
+}

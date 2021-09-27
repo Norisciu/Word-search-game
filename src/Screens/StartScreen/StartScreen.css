@@ -1,0 +1,94 @@
+.game-screen--start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--play-game {
+    padding: 1em 1.5em;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.checker {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+.start-menu__container{
+    width: 80%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    /* mike */
+}
+
+.menu {
+    background-color: whitesmoke;
+}
+
+.game-menu--buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.game-menu-options{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.game-menu--row {
+    display: flex;
+    padding: 0 0 0.5em 0;
+    /* padding: 1em 0; */
+}
+
+.game-menu--row label {
+    /* margin-right: auto; */
+    width: 12em;
+    text-align: left;
+}
+
+.game-menu--options-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.puzzleNotMade{
+    animation: fadeIn 0.2s linear both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity : 0;
+        transform: translateY(1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
