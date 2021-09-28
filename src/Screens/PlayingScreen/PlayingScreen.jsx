@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import initPuzzle from "../../PuzzleMaker/wordSearchPuzzleMakerUpdate.js";
 import WordSearchMenu from "../../Componnents/WordSearchMenu/WordSearchMenu.js";
 import Timer from "../../Componnents/Timer/Timer";
-import { WordsGrid } from "../../Componnents/Grid/AWordsGrid";
+import { WordsGrid } from "../../Componnents/Grid/WordsGrid";
 import Selection from "../../Types/Classes/Selection";
 import { SELECTION_COLOR_HINT } from "../../helpers/constantsModule.js";
 
